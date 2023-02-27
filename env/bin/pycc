@@ -1,0 +1,3 @@
+#!/Users/avikumar/Downloads/rhf_app/env/bin/python
+from numba.pycc import main
+main()

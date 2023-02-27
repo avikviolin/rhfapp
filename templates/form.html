@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RHF Predictor</title>
+	<style>
+		
+		/* Background */
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Title */
+		h1 {
+			color: #333;
+			margin: 40px 0 20px;
+			text-align: center;
+		}
+
+		form {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.col {
+			flex: 50%;
+			box-sizing: border-box;
+			padding: 0 10px;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		
+		input[type="placeholder"] {
+			color:lightgray;
+		}
+
+
+		input[type="text"] {
+			color:black;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+			font-size: 16px;
+			margin-bottom: 20px;
+			padding: 10px;
+			width: 100%;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			border: none;
+			border-radius: 3px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 16px;
+			padding: 10px 20px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #666;
+		}
+
+		.error {
+			color: red;
+			font-size: 12px;
+			margin-top: -10px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter Patient Features</h1>
+	<form action="/" method="post">
+		<div class="col">
+			<p>
+				<label for="intermacs">INTERMACS:</label>
+				<input type="text" id="intermacs" name="intermacs", placeholder="6">
+			</p>
+			<p>
+				<label for="meld">MELD:</label>
+				<input type="text" id="meld" name="meld", placeholder="6">
+			</p>
+			<p>
+				<label for="inotropes">Number of Inotropes:</label>
+				<input type="text" id="inotropes" name="inotropes", placeholder="0">
+			</p>
+			<p>
+				<label for="hemoglobin">Hemoglobin:</label>
+				<input type="text" id="hemoglobin" name="hemoglobin", placeholder="14">
+			</p>
+			<p>
+				<label for="race">Race:</label>
+				<input type="text" id="race" name="race", placeholder="1 (White=1, Not White=0)">
+			</p>
+		</div>
+		<div class="col">
+			<p>
+				<label for="smoking">Smoking:</label>
+				<input type="text" id="smoking" name="smoking", placeholder="0">
+			</p>
+			<p>
+				<label for="rap">RAP:</label>
+				<input type="text" id="rap" name="rap", placeholder="7">
+			</p>	
+			<p>
+				<label for="ast">AST:</label>
+				<input type="text" id="ast" name="ast", placeholder="25">
+			</p>
+			<p>
+				<label for="bun">BUN:</label>
+				<input type="text" id="bun" name="bun", placeholder="15">
+			</p>
+			<p>
+				<label for="gfr">GFR:</label>
+				<input type="text" id="gfr" name="gfr", placeholder="100">
+			</p>
+		</div>
+		<p style="clear: both;">
+			<input type="submit" value="Submit">
+		</p>
+	</form>
+	

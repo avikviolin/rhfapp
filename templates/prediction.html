@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+      .shap-plot {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Prediction Result</h1>
+    <p>The predicted chance of right heart failure after LVAD implantation is: {{ prediction }}</p>
+    <p>This model should not be used in clinical practice. Further research is needed to understand the role of race in RHF after LVAD.</p>
+    <img src="{{ url_for('static', filename=shap_plot) }}" alt="SHAP plot" class="shap-plot">
+  </body>
+</html>
