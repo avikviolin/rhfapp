@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'rhfappFINAL'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CEEA75FE274445C6B5FF81A8879557B8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CB970EFEC53B47F88BE172E6A027E193 }}
